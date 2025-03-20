@@ -6,7 +6,7 @@ const Feed = () => {
 
   useEffect(() => {
     const fetchPosts = () => {
-      axios.get("http://localhost:8080/posts")
+      axios.get("http://localhost:8080/users/1/posts")
         .then(response => setPosts(response.data))
         .catch(error => console.error("Error fetching feed:", error));
     };
